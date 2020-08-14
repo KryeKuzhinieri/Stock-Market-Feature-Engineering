@@ -21,7 +21,6 @@ These features were enginered with the help of my friend **Alixsander Haj Saw**
 - [References](#references)
 - [Happy Cooking!](#happy-cooking-)
 
-<small><i><a href='http://ecotrust-canada.github.io/markdown-toc/'>Table of contents generated with markdown-toc</a></i></small>
 
 
 # Introduction
