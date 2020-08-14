@@ -60,7 +60,8 @@ head(DB)
 ### Stockastic %K
 * A stochastic oscillator is a momentum indicator comparing a particular closing price of a security to a range of its prices over a certain period of time. The sensitivity of the oscillator to market movements is reducible by adjusting that time period or by taking a moving average of the result. **(Hayes, 2020)**
 * Formula: 
-<center><img src="https://render.githubusercontent.com/render/math?math=StockasticK=\dfrac{C_{t}-L_{n}}{H_{n}+L_{n}}*100"> </center>
+<p align="center">
+<img src="https://render.githubusercontent.com/render/math?math=StockasticK=\dfrac{C_{t}-L_{n}}{H_{n}+L_{n}}*100"> </p>
 
 
 ```r
