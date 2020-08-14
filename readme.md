@@ -1,5 +1,28 @@
 These features were enginered with the help of my friend **Alixsander Haj Saw**
 
+- [Introduction](#introduction)
+- [Required Libraries](#required-libraries)
+- [Feature Engineering](#feature-engineering)
+    + [Reading Dataset](#reading-dataset)
+    + [Stockastic %K](#stockastic--k)
+    + [Stochastic %D](#stochastic--d)
+    + [Stochastic Slow %D](#stochastic-slow--d)
+    + [Momentum](#momentum)
+    + [Rate of Change](#rate-of-change)
+    + [Larry William's %R](#larry-william-s--r)
+    + [A/O Oscillator](#a-o-oscillator)
+    + [Disparity in 5 and 10 days](#disparity-in-5-and-10-days)
+    + [Moving Average 5 and 10](#moving-average-5-and-10)
+    + [OSCP Price Oscillator](#oscp-price-oscillator)
+    + [Commodity Channel Index (CCI)](#commodity-channel-index--cci-)
+    + [Relative Strength Index (RSI)](#relative-strength-index--rsi-)
+    + [Direction Calculation and NA cleaning](#direction-calculation-and-na-cleaning)
+    + [Final Dataset](#final-dataset)
+- [References](#references)
+- [Happy Cooking!](#happy-cooking-)
+
+<small><i><a href='http://ecotrust-canada.github.io/markdown-toc/'>Table of contents generated with markdown-toc</a></i></small>
+
 
 # Introduction
 
