@@ -1,13 +1,3 @@
----
-title: "Stock Market Data Preprocessing"
-author: "Krye Kuzhinieri"
-date: "8/12/2020"
-output: 
-  html_document:
-    toc: True
-    keep_md: true
----
-
 These features were enginered with the help of my friend **Alixsander Haj Saw**
 
 
