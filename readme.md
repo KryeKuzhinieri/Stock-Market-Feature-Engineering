@@ -1,4 +1,4 @@
-These features were enginered with the help of my friend **Alixsander Haj Saw**
+These features were engineered with the help of my friend **Alixsander Haj Saw**
 
 # Table of Contents
 - [Introduction](#introduction)
