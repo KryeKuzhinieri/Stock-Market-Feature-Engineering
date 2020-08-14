@@ -91,7 +91,7 @@ cat("Some of the Stockastic K values are: ", tail(DB$StochasticK, 3))
 
 ### Stochastic %D
 * Stochastic %D is the number of time periods used when calculating a moving average of %K. The moving average is called "%D". **(Steven B. Achelis)**
-* Formula: $$ StochasticD=\sum_{i=0}^{n-1}\dfrac{StochasticK_{t-i}}{n} $$
+* Formula: 
 <img src="https://render.githubusercontent.com/render/math?math=StochasticD=\sum_{i=0}^{n-1}\dfrac{StochasticK_{t-i}}{n}"> 
 
 
@@ -120,7 +120,7 @@ cat("Some of the Stockastic D values are: ", tail(DB$StochasticD, 3))
 
 ### Stochastic Slow %D
 * Similar to the relationship between Stochastic %K and %D, Stochastic Slow is a moving average of Stochastic %D.
-* Formula: $$ StochasticSlow=\sum_{i=0}^{n-1}\dfrac{StochasticD_{t-i}}{n} $$ 
+* Formula: 
 <img src="https://render.githubusercontent.com/render/math?math=StochasticSlow=\sum_{i=0}^{n-1}\dfrac{StochasticD_{t-i}}{n}">
 
 
@@ -149,7 +149,7 @@ cat("Some of the Stockastic Slow D values are: ", tail(DB$StochasticS, 3))
 
 ### Momentum
 * Momentum is the speed or velocity of price changes in a stock, security, or tradable instrument. Momentum shows the rate of change in price movement over a period of time to help investors determine the strength of a trend. **(Investopedia Staff)**
-* Formula: $$Momentum=C_{t}-C_{t-4}$$
+* Formula:
 <img src="https://render.githubusercontent.com/render/math?math=Momentum=C_{t}-C_{t-4}">
 
 
@@ -168,7 +168,7 @@ cat("Some of the Momentum values are: ", tail(DB$Momentum, 3))
 ### Rate of Change
 
 * The Rate-of-Change (ROC) indicator, which is also referred to as simply Momentum, is a pure momentum oscillator that measures the percent change in price from one period to the next. The ROC calculation compares the current price with the price “n” periods ago. **(Stockcharts)**
-* Formula: $$ROC=\dfrac{C_{t}}{C_{t-n}}*100$$
+* Formula:
 <img src="https://render.githubusercontent.com/render/math?math=ROC=\dfrac{C_{t}}{C_{t-n}}*100">
 
 ```r
@@ -186,7 +186,7 @@ cat("Some of the ROC values are: ", tail(DB$ROC, 3))
 ### Larry William's %R
 
 * Williams %R, also known as the Williams Percent Range, is a type of momentum indicator that moves between 0 and -100 and measures overbought and oversold levels. The Williams %R may be used to find entry and exit points in the market. **(Mitchell, 2019)**
-* Formula: $$ LW=\dfrac{H_{n}-C_{t}}{H_{n}-L_{n}}*100 $$
+* Formula: 
 <img src="https://render.githubusercontent.com/render/math?math=LW=\dfrac{H_{n}-C_{t}}{H_{n}-L_{n}}*100">
 
 
@@ -219,7 +219,7 @@ cat("Some of the LW values are: ", tail(DB$LarryWilliams, 3))
 ### A/O Oscillator
 
 * Accumulation/distribution is a cumulative indicator that uses volume and price to assess whether a stock is being accumulated or distributed. The accumulation/distribution measure seeks to identify divergences between the stock price and volume flow. This provides insight into how strong a trend is. **(Mitchell, 2019)**
-* Formula: $$AO=\dfrac{H_{t}-C_{t-1}}{H_{t}-L_{t}}$$
+* Formula: 
 <img src="https://render.githubusercontent.com/render/math?math=AO=\dfrac{H_{t}-C_{t-1}}{H_{t}-L_{t}}">
 
 
@@ -239,7 +239,7 @@ cat("Some of the AO values are: ", tail(DB$Oscillator, 3))
 
 * The disparity index is a technical indicator that measures the relative position of an asset's most recent closing price to a selected moving average and reports the value as a percentage.
 A value greater than zero—a positive percentage—shows that the price is rising, suggesting that the asset is gaining upward momentum. Conversely, a value less than zero—a negative percentage—can be interpreted as a sign that selling pressure is increasing, forcing the price to drop. **(Segal, 2019)**
-* Formula: $$ D5=\dfrac{C_{t}}{MA_{5or10}}*100$$
+* Formula: 
 <img src="https://render.githubusercontent.com/render/math?math=D5=\dfrac{C_{t}}{MA_{5or10}}*100">
 
 
@@ -300,7 +300,7 @@ cat("Some of the D10 values are: ", tail(DB$Disparityin10, 3))
 
 ### Moving Average 5 and 10
 * The moving average (MA) is a simple technical analysis tool that smooths out price data by creating a constantly updated average price. The average is taken over a specific period of time, like 10 days, 20 minutes, 30 weeks or any time period the trader chooses. **(Mitchell, 2020)**
-* Formula: $$MA_{5or10}=\dfrac{\sum_{i=1}^{5or10}C_{t-1+i}}{5or10}$$
+* Formula: 
 <img src="https://render.githubusercontent.com/render/math?math=MA_{5or10}=\dfrac{\sum_{i=1}^{5or10}C_{t-1+i}}{5or10}">
 
 
@@ -345,7 +345,7 @@ moving10[10:length(Price)] <- sv[1:(length(Price)-9)]
 
 ### OSCP Price Oscillator
 * To calculate it, we will use the moving averages calculated in the previous step.
-* Formula: $$OSCP=\dfrac{MA_{5}-MA_{10}}{MA_{5}}$$
+* Formula:
 <img src="https://render.githubusercontent.com/render/math?math=OSCP=\dfrac{MA_{5}-MA_{10}}{MA_{5}}">
 
 
@@ -362,7 +362,7 @@ cat("Some of the OSCP values are: ", tail(DB$OSCP, 3))
 
 ### Commodity Channel Index (CCI)
 * The commodity channel index measures an asset value’s deviation from its statistical average. **(DayTrading)**
-* Formula: $$CCI=\dfrac{M_{t}-SM_{t}}{0.015*D_{t}}$$
+* Formula: 
 <img src="https://render.githubusercontent.com/render/math?math=CCI=\dfrac{M_{t}-SM_{t}}{0.015*D_{t}}">
 
 ```r
@@ -420,7 +420,7 @@ cat("Some of the CCI values are: ", tail(DB$CCI, 3))
 
 ### Relative Strength Index (RSI)
 * The Relative Strength Index (RSI), developed by J. Welles Wilder, is a momentum oscillator that measures the speed and change of price movements. The RSI oscillates between zero and 100. Traditionally the RSI is considered overbought when above 70 and oversold when below 30. **(Fidelity)**
-* Formula: $$ RSI=100-\dfrac{100}{\dfrac{1+\dfrac{\sum_{i=0}^{n-1}UP_{t-i}}{n}}{\dfrac{\sum_{i=0}^{n-1}DW_{t-1}}{n}}}$$
+* Formula: 
 <img src="https://render.githubusercontent.com/render/math?math=RSI=100-\dfrac{100}{\dfrac{1+\dfrac{\sum_{i=0}^{n-1}UP_{t-i}}{n}}{\dfrac{\sum_{i=0}^{n-1}DW_{t-1}}{n}}}">
 
 ```r
