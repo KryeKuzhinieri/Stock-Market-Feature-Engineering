@@ -169,7 +169,7 @@ cat("Some of the Momentum values are: ", tail(DB$Momentum, 3))
 
 * The Rate-of-Change (ROC) indicator, which is also referred to as simply Momentum, is a pure momentum oscillator that measures the percent change in price from one period to the next. The ROC calculation compares the current price with the price “n” periods ago. **(Stockcharts)**
 * Formula: $$ROC=\dfrac{C_{t}}{C_{t-n}}*100$$
-<img src="https://render.githubusercontent.com/render/math?math=ROC=\dfrac{C_{t}}{C_{t-n}} *100}">
+<img src="https://render.githubusercontent.com/render/math?math=ROC=\dfrac{C_{t}}{C_{t-n}}*100">
 
 ```r
 ROC = Price/((shift(Price, n=7, type ="lag"))*100)
