@@ -1,5 +1,6 @@
 These features were enginered with the help of my friend **Alixsander Haj Saw**
 
+# Table of Contents
 - [Introduction](#introduction)
 - [Required Libraries](#required-libraries)
 - [Feature Engineering](#feature-engineering)
